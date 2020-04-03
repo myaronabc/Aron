@@ -13,3 +13,7 @@ class Stack():
             return self.items.pop()
         else:
             raise Exception("Stack is empty!")
+
+    def isEmpty(self):
+        return self.items == []
+    
