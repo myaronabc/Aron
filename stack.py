@@ -7,3 +7,9 @@ class Stack():
 
     def push(self,items):
         self.items.append(items)        #将items压栈
+
+    def pop(self):
+        if not self.isEmpty():
+            return self.items.pop()
+        else:
+            raise Exception("Stack is empty!")
